@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -30,7 +32,35 @@
 
     <!-- Main Content Area -->
     <main class="container my-5">
-        <!-- Page-specific content goes here -->
+        <h1 class="mb-4 text-center">About Webb Engineered Systems</h1>
+
+        <p>At Webb Engineered Systems, we design and build custom computer systems tailored to your needs. Whether
+            you're a gamer, developer, or Linux enthusiast, we have a build for you.</p>
+
+        <!-- Founder Modal Trigger -->
+        <div class="text-center mt-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#founderModal">
+                Meet the Founder
+            </button>
+        </div>
+
+        <!-- Founder Modal -->
+        <div class="modal fade" id="founderModal" tabindex="-1" role="dialog" aria-labelledby="founderModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="founderModalLabel">Founder: Cortney Webb</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Cortney Webb 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -43,4 +73,5 @@
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
+
 </html>
