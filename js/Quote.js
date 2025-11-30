@@ -4,25 +4,25 @@
 
 const pricing = {
     starter: {
-        base: 0,
+        base: 1000,
         cpu: { none: 0, low: 0, medium: 0, high: 0 },
         gpu: { none: 0, low: 0, medium: 0, high: 0 },
         ram: { none: 0, low: 0, medium: 0, high: 0 },
         ssd: { none: 0, low: 0, medium: 0, high: 0 }
     },
     gaming: {
-        base: 0,
-        cpu: { none: 0, low: 0, medium: 0, high: 0 },
-        gpu: { none: 0, low: 0, medium: 0, high: 0 }, // none still allowed
-        ram: { none: 0, low: 0, medium: 0, high: 0 },
-        ssd: { none: 0, low: 0, medium: 0, high: 0 }
-    },
-    workstation: {
-        base: 0,
+        base: 2500,
         cpu: { none: 0, low: 0, medium: 0, high: 0 },
         gpu: { none: 0, low: 0, medium: 0, high: 0 },
         ram: { none: 0, low: 0, medium: 0, high: 0 },
         ssd: { none: 0, low: 0, medium: 0, high: 0 }
+    },
+    workstation: {
+        base: 7000,
+        cpu: { none: 0, low: 1000, medium: 3500, high: 10500 },
+        gpu: { none: 0, low: 1000, medium: 8000, high: 39000},
+        ram: { none: 0, low: 300, medium: 700, high: 11000 },
+        ssd: { none: 0, low: 100, medium: 300, high: 900 }
     }
 };
 
