@@ -1,0 +1,11 @@
+@keyframes rgb-cycle {
+  0%   { color: #00f; text-shadow: 0 0 10px #00f; }
+  25%  { color: #f0f; text-shadow: 0 0 10px #f0f; }
+  50%  { color: #0ff; text-shadow: 0 0 10px #0ff; }
+  75%  { color: #0f0; text-shadow: 0 0 10px #0f0; }
+  100% { color: #00f; text-shadow: 0 0 10px #00f; }
+}
+
+.rgb-glow {
+    animation: rgb-cycle 15s infinite linear;
+}
