@@ -5,22 +5,22 @@
 const pricing = {
     starter: {
         base: 1000,
-        cpu: { none: 0, low: 0, medium: 0, high: 0 },
-        gpu: { none: 0, low: 0, medium: 0, high: 0 },
-        ram: { none: 0, low: 0, medium: 0, high: 0 },
-        ssd: { none: 0, low: 0, medium: 0, high: 0 }
+        cpu: { none: 0, low: 50, medium: 150, high: 300 },
+        gpu: { none: 0, low: 400, medium: 750, high: 2000 },
+        ram: { none: 0, low: 150, medium: 300, high: 900 },
+        ssd: { none: 0, low: 30, medium: 150, high: 350 }
     },
     gaming: {
         base: 2500,
-        cpu: { none: 0, low: 0, medium: 0, high: 0 },
-        gpu: { none: 0, low: 0, medium: 0, high: 0 },
-        ram: { none: 0, low: 0, medium: 0, high: 0 },
-        ssd: { none: 0, low: 0, medium: 0, high: 0 }
+        cpu: { none: 0, low: 100, medium: 200, high: 300 },
+        gpu: { none: 0, low: 350, medium: 600, high: 1600 },
+        ram: { none: 0, low: 150, medium: 450, high: 750 },
+        ssd: { none: 0, low: 100, medium: 300, high: 700 }
     },
     workstation: {
         base: 7000,
         cpu: { none: 0, low: 1000, medium: 3500, high: 10500 },
-        gpu: { none: 0, low: 1000, medium: 8000, high: 39000},
+        gpu: { none: 0, low: 1000, medium: 8000, high: 39000 },
         ram: { none: 0, low: 300, medium: 700, high: 11000 },
         ssd: { none: 0, low: 100, medium: 300, high: 900 }
     }
@@ -73,6 +73,7 @@ quoteForm.addEventListener("submit", function (event) {
         return;
     }
 
+    const email = document.getElementById("userEmail").value;
     const tier = systemTier.value;
     const tierPrices = pricing[tier];
 
@@ -89,6 +90,7 @@ quoteForm.addEventListener("submit", function (event) {
         tierPrices.ssd[ssd];
 
     quoteOutput.innerHTML = `
+        <strong>Email:</strong> ${email}<br>
         <strong>System Tier:</strong> ${tier}<br>
         <strong>CPU Upgrade:</strong> ${cpu}<br>
         <strong>GPU Upgrade:</strong> ${gpu}<br>
